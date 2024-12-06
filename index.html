@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        position: relative;
+      }
+      .lorem-2 {
+        color: blue;
+      }
+      span {
+        background-color: red;
+        color: white;
+      }
+      #heading-1 {
+        color: white;
+        background-color: brown;
+      }
+      .lorem {
+        font-size: 18px;
+      }
+
+      .lorem-5:hover {
+        width: fit-content;
+        background-color: aqua;
+        transition: 0.5s ease-in;
+      }
+      .lorem-5::after {
+        content: 'selamat datang';
+        margin-left: 5px;
+        color: tomato;
+      }
+      .box {
+        width: 80px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box-container {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        background-color: aqua;
+        position: relative;
+        bottom: 0;
+        left: 500px;
+      }
+      .box-dua {
+        background-color: grey;
+        position: absolute;
+        top: 340px;
+        left: 670px;
+      }
+      .box-tiga {
+        background-color: red;
+        position: absolute;
+        top: 330px;
+        left: 690px;
+      }
+      .box-empat {
+        background-color: green;
+        position: absolute;
+        top: 320px;
+        left: 710px;
+      }
+      .box-lima {
+        background-color: grey;
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading-1">selamat datang</h1>
+      <section>
+        <article>
+          <p class="lorem lorem-1" style="background-color: cadetblue">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+            commodi quis ut sit animi nisi voluptatem sint. Quaerat, ab. Ipsum
+            reiciendis provident aperiam?
+          </p>
+          <p class="lorem lorem-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+            commodi quis ut sit animi nisi voluptatem sint. Quaerat, ab. Ipsum
+            reiciendis provident aperiam?
+          </p>
+          <p class="lorem lorem-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+            commodi quis ut sit animi nisi voluptatem sint. Quaerat, ab. Ipsum
+            reiciendis provident aperiam?
+          </p>
+          <p class="lorem lorem-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+            commodi quis ut sit animi <span>nisi voluptatem sint</span>.
+            Quaerat, ab. Ipsum reiciendis provident aperiam?
+          </p>
+          <p class="lorem lorem-5">ini adalah hover</p>
+          <div class="box-container">
+            <div class="box box-lima">absolute</div>
+          </div>
+          <div class="box box-dua">card 1</div>
+          <div class="box box-tiga">card 2</div>
+          <div class="box box-empat">card 3</div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>
